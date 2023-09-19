@@ -1,0 +1,108 @@
+* {
+  font-family: 'poppins', sans-serif; /* muda a estilização da fonte */
+  margin: 0; /* serve para dar um espaço para fora do elemento */
+    padding: 0; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/ 
+    
+    box-sizing: border-box; /* Faz com que o navegador não calcule a dimensão de um elemento sem a soma das bordar ou margins*/
+}
+
+body {/*estiliza o corpo da pagina */
+  background-color: purple;/* muda a cor de dundo  */
+}
+h1 {/* estilizasão dos titulos */
+  display: flex;/* deixa a posisão flexivel para conseguir mudar a posisão */
+  justify-content: center;/* alinha os elementos horizontalmente */
+  align-items: center;/* alinha os itens verticalmente */
+  color: white;/* muda a cor da fonte */
+}
+
+.toda-tabela {/* div para centralizar a tabela */
+  width: 100%;/* muda a largura */
+  display: flex;/* deixa a posisão flexivel para conseguir mudar a posisão */
+  justify-content: center;/* alinha os elementos horizontalmente */
+  align-items: center;/* alinha os itens verticalmente */
+  text-align: center;/* centraliza a fonte */
+}
+
+.table a {/* estiliza a tabela */
+  color: blue;/* muda a cor da fonte */
+  text-decoration: underline;
+}
+
+.href {/* estiliza o botão de redirecionamento */
+  color: white;/* muda a cor da letra */
+}
+
+.table {/* muda a estilizasão da tabela */
+  background-color: rgb(255, 255, 255);/* muda a cor de fundo */
+ /* cria uma borda preta */
+  box-shadow: 0px 0px 10px black;/* cria uma sombra em voltada da tabela */
+}
+
+.trtitulo {/* estiliza o titulo de cada coluna */
+  color: rgb(0, 0, 0);/* muda a cor da fonte */
+  
+}
+
+.divtabela {/* muda tamanho da fonte */
+  font-size: 80%;/* muda o tamanho da fonte */
+  text-align: center;/* alinha os itens no centro */
+}
+
+.hrefsair {/* estilização do botão de sair */
+  margin-top: 50px;/* cria uma margem para cima */
+  font-size: 14px;/* aumenta o tamanho da letra */
+  padding: 10px;/* cria um espaço interno */
+  background-color: black;/* muda a cor de fundo */
+  color: rgb(0, 0, 0);/* muda a cor da fonte */
+  font-size: 12px;/* muda o tamanho da fonte */
+  border-radius: 20px;/* arredonda as bordas */
+}
+
+/* css dos comentarios */
+.comentario {/* estiliza os textos do comentarios */
+  background-color: rgb(255, 255, 255);/* muda a cor da letra */
+  padding: 5px;/* cria uma borda interna */
+  margin-top: 10px;/* cria uma margem para cima */
+  border-radius: 10px;/* arredonda a borda */
+}
+
+.div-comentarios {/* estiliza a div onde irão ficar os comentarios */
+  background-color: rgb(165, 1, 165);/* muda a cor de fundo */
+  box-shadow: 0px 0px 20px black;/* cria uma sobra para a div */
+  color: rgb(0, 0, 0);/* muda a cor da letra */
+  margin-top: 30px;/* cria uma margem para cima */
+  padding: 20px;/* cria um espaço interno */
+  width: 80%;/* muda a largura */
+}
+
+.nome {/* estiliza o nome */
+  color: black;/* muda a cor da fonte */
+  font-weight: bold;/* deixa a fonte mais grossa */
+  margin-bottom: 10px;/* cria uma margem para baixo */
+}
+
+.comentarios-geral {/* div para centralizar os comentarios */
+  width: 100%;/* muda largura */
+  text-align: center;/* centarliza os textos */
+  display: flex;/* deixa a posisão flexivel para conseguir mudar a posisão */
+  justify-content: center;/* alinha os elementos horizontalmente */
+  align-items: center;/* alinha os itens verticalmente */
+  flex-direction: column;/* muda a diresão para uma coluna */
+}
+
+.topo {/* estiliaza o botão para voltar para cima */
+  font-size: 20px;/* muda tamanho da fonte */
+  color: white;/* muda a cor da fonte */
+  width: 22px;/* muda a largura */
+  height: 25px;/* muda a altura */
+  text-align: center;/*  */
+  position: fixed;/* deixa a posisão fixa para não  */
+  right: 20px;/* posisiona para rigth */
+  top: 400px;/* posisiona o elemento para cima */
+  background-color: black;/* muda a cor de fundo */
+  border-radius: 10px;/* arredomnda as bordas */
+}
+td{
+  border:1px rgb(0, 0, 0) solid ;
+}

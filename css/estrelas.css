@@ -1,0 +1,83 @@
+@font-face {
+    font-family: 'Patron';
+    src: url(../patron/Patron\ -\ PersonalUse.otf);
+  }
+  
+body{
+    background-image: linear-gradient(45deg, black, #221133);
+}
+
+.estrelas input[type=radio]{/* estização de input */
+	display: none;/* some como o input do type radio */
+}.estrelas label i.fa:before{
+	content: '\f005';
+	color: #FC0;/* muda a cor para amarelo */
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+	color: #CCC;/* se não estiver seleciona fica cinza */
+}
+
+.img-avaliar{
+    width: 100%;/* deixa a lagura em 100% */
+    display: flex;/* deixa a class flexivel para mudar a posisão */
+    justify-content: center;/* alinha horizontamente no centro */
+    align-items: center;/* alinha verticalmente no centro */
+}
+.img-produtos{
+    margin: 20px;/* deixa uma margin para não grudar os itens */
+    height: 75vh;/* deixa a altura com 75% da tela total */
+}
+
+.avaliar{/* imagem do produto que ira ser avaliado */
+    width: 100%;/* deixa a largura em 100% para ocupar toda a tela */
+    display: inline-block;/* inline block para deixar cada iten embaixo de outro */
+    text-align: center;/* alinha os itens no centro */
+}
+
+.nome-produto{
+    font-family: 'Patron', sans-serif;/* muda a fonte colocando uma fonte secundaria caso a promeira não apreça */
+    font-size: 23px;/* aumenta o tamanho da fonte */
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;/* cria uma sombra para o texto */
+    color: #fff;/* muda a cor da fonte */
+}
+
+.estrelas{
+    width: 50%;/* deixa a largura em 50% */
+    display: inline-block; 
+    background-color: rgb(0, 0, 0);/* muda a cor do fundo */
+    border: 2px solid black;/* cria uma borda */
+    border-radius: 8px;/* arredonda a borda */
+    margin-bottom: 2%;/* da uma magem para o botão */
+    margin: 0 2% 2% 2%;/* cria uma margem */
+}
+
+.button{
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;/* cria uma sombra para o texto */
+    margin-bottom: 5px;/* cia uma margem para baixo */
+    border-radius: 8px;/* arredonda as bordas */
+    color: #fff;/* muda a cor da letra */
+    background-color: #000;/* muda a cor do fundo */
+    width: 80px;/* muda a largura */
+    height: 30px;/* muda a altura  */
+}
+
+.textarea{
+    width: 70%;/* muda a largura */
+    height: 75px;/* muda a altura */
+    border-radius: 8px;/* arredoda as bordas */
+}
+/* para tablet ou mobile  */
+@media only screen and (min-width:800px){
+
+    .textarea{
+        width: 60%;/* muda a lagura */ 
+    }
+    .estrelas{
+        width: 40%;/* muda a largura */
+    }
+}
+/* para desktop */
+@media only screen and (min-width:1000px){
+.estrelas{
+    width: 35%; /* muda a largura */
+}
+}

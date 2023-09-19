@@ -1,0 +1,177 @@
+* {/* inclui todos os elementos */
+  margin: 0;/* zera o expaço externo */
+  padding: 0;/* zera o espaço interno */
+  box-sizing: border-box;/*  */
+  font-family: 'poppins', sans-serif;/* muda a fonte */
+}
+
+body {
+  background-color: black;/* muda a cor do fundo */
+  width: 100vw;/* muda a largura */
+  height: 100vh;/* muda a altura */
+  display: flex;/* deixa flexivel pra mudar a posisão */
+  align-items: center;/* alinha os itens verticalmente */
+  justify-content: center;/* alinha os itens horizontalmente */
+}
+
+.formulario {/* estiliza o formulario */
+  background-color: rgb(4, 0, 255);/* muda a cor do fundo */
+  padding: 6px;/* cria um espaço para dentro */
+  width: 350px;/* muda a largura */
+  height: 350px;/* muda a altura */
+  display: flex;/* deixa flexivel pra mudar a posisão */
+  flex-direction: column;/* alinha os itens em colunas */
+  align-items: center;/* alinha os itens verticalmente */
+  position: relative;/* coloca a imagem em posisão relativa para mudar a posição */
+  overflow: hidden;/* tudo que passar para fora do formulario é ocultado */
+  justify-content: center;/* alinha os itens horizontalmente */
+  border-radius: 10px;/* arredonda as bordas */
+  box-shadow: 0px 0px 40px rgb(0, 17, 255), 0px 0px 20px rgba(0, 17, 255, 0.747);/* cria uma sombra para o texto */
+
+}
+
+.formularioprodutos {/* estiliza formulario de produtos  */
+  background-color: rgb(4, 0, 255);/* muda a cor do fundo */
+  padding: 6px;/* cria um espaço para dentro */
+  width: 350px;/* muda a largura */
+  height: 650px;/* muda a altura */
+  display: flex;/* deixa flexivel pra mudar a posisão */
+  flex-direction: column;/* alinha os itens em colunas */
+  align-items: center;/* alinha os itens verticalmente */
+  position: relative;/*  */
+  overflow: hidden;/* tudo que passar para fora do formulario é ocultado */
+  justify-content: center;/* alinha os itens horizontalmente */
+  border-radius: 10px;/* arredonda as bordas */
+  box-shadow: 0px 0px 40px rgb(0, 17, 255), 0px 0px 20px rgba(0, 17, 255, 0.747);/* cria uma sombra para o texto */
+
+}
+.descricao {
+  width: 300px;/* arredonda as bordas */
+}
+
+label {/* nomes dos inputs */
+  margin-top: 10px;/* cria uma margem para cima */
+}
+
+select {/* input select */
+  width: 60%;/* muda a largura */
+  text-align: center;
+}
+
+.formularioedit {/* formulario de editar */
+  background-color: rgb(255, 0, 0);/* muda a cor de fundo */
+  padding: 6px;/* cria um espaço para dentro */
+  width: 350px;/* muda a largura */
+  height: 650px;/* muda a altura */
+  display: flex;/* deixa o siplay flex para mudar aposisão */
+  flex-direction: column;/* deixa os itens em coluna */
+  align-items: center;/* alinha os itens verticalmente */
+  position: relative;/* dexa posição relativa para mudar a posisão*/
+  overflow: hidden;/* tudo que estiver fora da borda é ocultado */
+  justify-content: center;/* alinha os itens horizontalmente  */
+  border-radius: 10px;/* arredonda a borda */
+  box-shadow: 0px 0px 40px rgb(255, 0, 0), 0px 0px 20px rgba(255, 0, 0, 0.747);/* cria uma sombra em volta da div */
+
+}
+
+.formularioimg {/* formulario de editar imagem */
+  background-color: rgb(255, 0, 0);/* muda a cor de fundo */
+  padding: 6px;/* cria um espaço para dentro */
+  width: 350px;/* muda a largura */
+  height: 500px;/* muda a altura */
+  display: flex;/* deixa o siplay flex para mudar aposisão */
+  flex-direction: column;/* deixa os itens em coluna */
+  align-items: center;/* alinha os itens verticalmente */
+  position: relative;/* dexa posição relativa para mudar a posisão*/
+  overflow: hidden;/* tudo que estiver fora da borda é ocultado */
+  justify-content: center;/* alinha os itens horizontalmente  */
+  border-radius: 10px;/* arredonda a borda */
+  box-shadow: 0px 0px 40px rgb(255, 0, 0), 0px 0px 20px rgba(255, 0, 0, 0.747);/* cria uma sombra em volta da div */
+
+}
+
+.formularioadmcadastro { /* formulario de cadastro do */
+  background-color: rgb(255, 0, 0);/* muda a cor de fundo */
+  padding: 6px;/* cria um espaço para dentro */
+  width: 350px;/* muda a largura */
+  height: 520px;/* muda a altura */
+  display: flex;/* deixa o siplay flex para mudar aposisão */
+  flex-direction: column;/* deixa os itens em coluna */
+  align-items: center;/* alinha os itens verticalmente */
+  position: relative;/* dexa posição relativa para mudar a posisão*/
+  overflow: hidden;/* tudo que estiver fora da borda é ocultado */
+  justify-content: center;/* alinha os itens horizontalmente  */
+  border-radius: 10px;/* arredonda a borda */
+  box-shadow: 0px 0px 40px rgb(255, 0, 0), 0px 0px 20px rgba(255, 0, 0, 0.747);/* cria uma sombra em volta da div */
+
+}
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+input[type="number"] {/* muda o input de texto,password e email */
+  border: none;/* anula as bordas */
+  margin-top: 20px;/* cria uma magem para cima */
+  border-radius: 60px;/* arredonda as bordas */
+  padding: 8px 0 8px 20px;/* cria um espaço interno */
+  outline: none;/*  */
+  width: 90%;/* muda a largura */
+}
+
+input[type="file"] {/* muda o input de type file */
+  border: none;/* desabilita a borda */
+  color: white;/* muda a cor da fonte */
+  border-radius: 60px;/* arredonda a borda */
+  padding: 8px 0 8px 20px;/* cria um espaço interno */
+  outline: none;/*  */
+  width: 100%;/* muda a largura */
+}
+
+.fileborder {/* div que tem o type file dentro */
+  width: 95%;/* muda a largura */
+  margin: 10px;/* cria uma margin para cima */
+  border: 2px solid white;/* dexeixa a fonte mais grossa */
+  background-color: #000000;/* muda a cor de fundo */
+  border-radius: 10px;/* arredonda a borda */
+  align-items: center;/* alinha os itens */
+  height: 50px;/* muda a altura */
+  display: flex;/* deixa flexivel para mudar aposisão */
+  align-items: center;/* alinha os itens */
+  justify-content: center;/* alinha os itens horizontalmente */
+  
+}
+
+.select {/* class do type select */
+  margin-top: 13px;/* cria uma margem para cima */
+}
+
+input[type="submit"] {/* estiliza o botão de enviar */
+  background: #000000;/* muda a cor de fundo */
+  color: white;/* muda a cor da letra */
+  border-radius: 30px;/* arredonda as bordas */
+  width: 90%;/* muda a estilizasão  */
+  border: none;/* desabilita a borda */
+  outline: none;/* retira o grifado da borda */
+  padding: 8px 0 8px 15px;/* cria um espaço interno */
+  font-size: 15px;/* muda o tamanhoda fonte */
+  margin-top: 30px;/* cria uma margem para cima */
+  cursor: pointer;/* muda o cursor para clikcar */
+}
+
+.formularios {/* estiliza o formulario  */
+  padding: 40px;/* cria um espaço interno */
+}
+
+.select {/* estuiliza o type select */
+  color: black;/* muda a cor da letra */
+}
+
+a {/* lestuliza o a  */
+  color: black;/* muda a cor da letra */
+  text-decoration: none;/* tira o trasinho no a */
+}
+
+a:hover {/* caso o usuario passe o mause emcima */
+  color: white;/* muda a cor da letra */
+  transition: 2s;/* cria uma transisão de dois segundo */
+}

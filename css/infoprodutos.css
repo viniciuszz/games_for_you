@@ -1,0 +1,256 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+@font-face {
+    font-family: 'Patron';
+    src: url(../patron/Patron\ -\ PersonalUse.otf);
+  }
+  
+body{
+    background-image: linear-gradient(45deg, black, #221133);
+}
+.porcentagem{
+    background-color: #000000fd;
+    font-size: 20px ;
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;
+    color: #8f08e2ef;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 37px;
+    height: 28px;
+    border-radius: 10px;
+    margin-left: 9px;
+    padding: 3px;
+}
+.desconto{
+    color: rgb(113, 113, 113);
+    text-decoration: line-through;
+}
+.valor-porcentagem{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+/*div do trailer */ 
+
+.btns-infoproduto{
+ display: inline-block;
+ 
+}
+.modal-container{
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #0000004b;
+    z-index: 999;
+    align-items: center;
+    justify-content: center;
+    display: none;
+}
+
+.modal{
+    width: 65%;
+    min-height: 200px;
+    background-color: #9804fa41;
+    backdrop-filter: blur(10px);
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.fechar{
+    position: absolute;
+    top: -10px;
+    right: -10px;
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #000000;
+    color: #fff;
+    font-weight: 700;
+    font-size: 14pt;
+    cursor: pointer;
+}
+.fechar:hover{
+    transition: 1s;
+    color: red;
+    text-shadow: 0px 0px 10px #a80202ef, 0px 0px 3px #d70909fd;
+}
+@keyframes animate-modal {
+    from {
+        transform: translate3d(0,200px, 0 );
+    }
+
+    to{
+        opacity: 1;
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+.modal-container.mostrar{
+    display: flex;
+}
+
+.mostrar .modal{
+    animation: animate-modal .90s;
+}
+.imgcarrinho{
+    height: 30px;
+    width: auto;
+    font-size: 7px;
+    border-radius: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.nome{
+    font-family: 'Patron', sans-serif;
+    font-size: 23px;
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;
+    
+}
+/*  css sistema de avaliação*/
+
+.estrelas  input[type=radio]{
+    display: none;
+}
+
+.numero-carrinho{
+    color: white;
+    
+    position: absolute;
+}
+.estrelas label i.fa:before{
+	content: '\f005';
+	color: #FC0;
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+	color: #CCC;
+}
+
+.total-conteudo{
+    display: inline-block;
+    margin-top: 15px;
+    text-align: center;
+    width: 100%;
+}
+
+.conteudo{
+    display: inline-block;
+    color: white;
+    box-shadow: 0px 0px 20px #6802a8ef, 0px 0px 10px #4709d7fd;
+    background-color: rgb(70, 52, 85);
+    border: 2px solid black;
+    border-radius: 8px;
+    margin-bottom: 2%;
+    margin: 0 2% 2% 2%;
+    width: 100%;
+}
+
+.img-produtos{
+    margin-top: 20px ;
+    border-radius: 10px;
+    height: 75vh;
+    width: 300px;
+}
+.div_img{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.valor{
+    font-size: 25px;
+
+}
+
+.descricao{
+    margin: 10px;
+    display: flex;
+    text-align: justify;
+}
+
+.comprar a{
+    color: white;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.comprar button{
+    margin: 0 0 6px 0;
+    background-color: #000000;
+    font-weight: bold;
+    color: white;
+    border-radius: 8px;
+    width: 100px;
+    height: 60px;
+    border: 2px black;
+}
+
+.comprar button:hover{
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;
+    box-shadow: 0px 0px 40px #6802a8ef, 0px 0px 20px #4709d7fd;
+
+}
+
+@media only screen and (min-width:800px){
+
+    .btns-infoproduto{
+        display: flex;
+        justify-content: center;
+        padding: 16px 0 100px 0;
+    }
+    .comprar{
+        margin: 0 20px 0 0;
+    }
+    .nome{
+        height: 10%;
+        font-size: 22px;
+    }
+    .valor{
+        height: 10%;
+    }
+    .descricao{
+        justify-content: center;
+        align-items: center;
+        height: 40%;
+        margin-top: 32px;
+        margin-bottom: 1%;
+        font-size: 14px;
+    }
+    .comprar{ 
+        display: flex;
+        justify-content: center;
+        align-items: end;
+        height: 19%;
+    }
+    .total-conteudo{
+        display: flex;
+    }
+
+    .conteudo{
+        margin: 20px 2% 20px 0;
+    }
+}
+
+@media only screen and (min-width:1000px){
+   
+    .descricao{
+        margin: 5% 2% 4% 2%;
+        font-size: 15px;
+    }
+    .comprar{
+        height: 14%;
+    }
+    .nome{
+        font-size: 28px;
+    }
+}
+
+@media only screen and (min-width:1100px){
+    .descricao{
+        margin: 5% 2% 1% 2%;
+    }
+}

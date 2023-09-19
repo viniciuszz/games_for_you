@@ -1,0 +1,149 @@
+* { /* Todos elementos do site ficaram com a margin que é o espaçamento de fora em 0 e o padding que é o espaçamento de dentro do elemento*/
+    margin: 0px;
+    padding: 0px;
+}
+
+
+body { /* Cor do corpo da página */
+    background-color: #221133;
+}
+.mais_menos{
+    margin: 5px;
+    background-color: black;
+    color: white;
+    font-size: 20px;
+    border-radius: 50%;
+    padding: 0px 5px;
+}
+.linha-produto {  /* container com cada produto com uma sombra preta, altura aútomaica para ficar proporcional a imagem, estão alinhados na vertical em blocos, comprimento será de 94% e o alinhamento fica no centro*/
+    box-shadow: 0px 0px 20px black;
+    padding: 5px 8px;
+    margin: 15px 10px;
+    background-color: rgb(75, 17, 75);
+    height: auto;
+    display: inline-block;
+    width: 91%;
+    text-align: center;
+}
+
+.remover-carrinho a {  /* Cor do texto */
+    color: white;
+}
+
+.remover-carrinho a:hover { /* transição quando o mouse passar por cima do elemento em segundos */
+    transition: 1s;
+    color: red;
+}
+
+.linha-produto div { /* Tamanho da fonte do texto; O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização; justify-content alinha a div no centro*/
+    font-size: 18px;
+    color: white;
+    margin: 0 20px;
+    justify-content: center;
+    display: flex;
+}
+
+.img-carrinho {
+    height: auto;
+    width: 150px;
+}
+
+.carrinho_vazio a span { /* text-shadow = Sombra no texto */
+    color: white;
+    font-size: 40vw;
+    text-shadow: 0px 0px 15px #6802a8ef, 0px 0px 10px #4709d7fd;
+}
+
+.carrinho_vazio { /* border-radius = Arredondamento do elemento */
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    background-color: #221133;
+    font-size: 30px;
+    color: white;
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;
+    text-align: center;
+}
+
+.divtotal {
+    border-radius: 2px;
+    width: 94%;
+    color: white;
+    margin: 10px;
+    box-shadow: 0px 0px 20px black;
+    background-color: rgb(75, 17, 75);
+    text-align: center;
+    display: inline-block;
+}
+
+.btncompra {
+    padding: 9px;
+    border-radius: 10px;
+    background-color: rgb(0, 0, 0);
+    margin: 10px;
+    color: white;
+
+}
+
+.acomprar {
+    color: rgb(255, 255, 255);
+}
+
+.acomprar:hover {
+    transition: 2s;
+    color: #9d00ffef;
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;
+}
+
+@media only screen and (min-width:750px) {
+    .geral { /* Alinhar horizontalmente os itens no centro */
+        display: inline-block;
+        width: 97%;
+        align-items: center;
+        text-align: center;
+    }
+
+    .linha-produto { /* Margin-top = Espaçamento de fora em comparação ao elemento (.linha-produto) */
+        display: flex;
+        margin-top: 20px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .linha-produto div {
+        width: 100%;
+        align-items: center;
+        display: flex;
+    }
+
+    .divtotal {
+        width: 40%;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+    .geral { /* Alinha o container sem a quebra de linha */
+        display: inline;
+    }
+
+    .linha-produto {
+        display: flex;
+        margin-top: 20px;
+        width: 75%;
+        text-align: center;
+    }
+
+    .divtotal { /*posição absoluta seria quase como a fixa mas nesse caso elá se move de acordo com a responsividade; Top seria a distancia do topo e right a distancia para a direita*/
+        width: 18%;
+        display: inline-block;
+        position: absolute;
+        top: 21%;
+        right: 0px;
+        text-align: center;
+    }
+
+    .divtotal h1 {
+        width: 100%;
+    }
+}

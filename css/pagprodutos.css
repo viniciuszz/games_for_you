@@ -1,0 +1,131 @@
+* {
+    padding: 0px;/* zera o espaço para dentro */
+    margin: 0px;/*  */
+}
+
+@font-face {/*  inporta a fonte */
+    font-family: 'Patron';
+    src: url(../patron/Patron\ -\ PersonalUse.otf);
+}
+
+.img-produtos {
+    width: 150px;/* muda a largura  */
+    height: 185px;/* muda a altura */
+}
+/*div da home  */
+.produto_vendido{
+    width: 100%;
+    display: flex;
+    color: white;
+    flex-direction: column;
+    text-align: center;
+}
+body {
+    background-image: linear-gradient(45deg, black, #221133);/* muda a cor do fundo */
+}
+
+/* playstation*/
+.jogop {
+    align-items: center;/* alinha os items verticalmente */
+    display: flex;/* deixa em flex para muadar o posisionamento dos itens  */
+    flex-direction: column;/* alinha a posisão dos itens em coluna */
+    color: white;/* muda a cor da fonte */
+    text-align: center;/* alinha o texto no centro */
+    padding: 20px;/* adiciona espaço dentro da div */
+    background-color: rgb(25, 0, 255);/* muda a cor de fundo */
+    font-size: 14px;/* muda o tamanho da fonte */
+    border-radius: 5px;/* arredonada a borda */
+    height: 300px;/* muda a altura */
+    width: 200px;/* muda alargura */
+    margin: 20px;/* cria uma margem */
+
+}
+
+/* nintendo*/
+.jogon {
+    align-items: center;/* alinha os items verticalmente */
+    display: flex;/* deixa em flex para muadar o posisionamento dos itens  */
+    flex-direction: column;/* alinha a posisão dos itens em coluna */
+    color: white;/* muda a cor da fonte */
+    text-align: center;/* alinha o texto no centro */
+    padding: 20px;/* adiciona espaço dentro da div */
+    background-color: rgb(255, 0, 0);/* muda a cor de fundo */
+    font-size: 14px;/* muda o tamanho da fonte */
+    border-radius: 5px;/* arredonada a borda */
+    width: 200px;/* muda alargura */
+    margin: 20px;/* cria uma margem */
+}
+
+/* xbox*/
+.jogox {
+    align-items: center;/* alinha os items verticalmente */
+    display: flex;/* deixa em flex para muadar o posisionamento dos itens  */
+    flex-direction: column;/* alinha a posisão dos itens em coluna */
+    color: white;/* muda a cor da fonte */
+    text-align: center;/* alinha o texto no centro */
+    padding: 20px;/* adiciona espaço dentro da div */
+    background-color: rgb(2, 189, 17);/* muda a cor de fundo */
+    font-size: 14px;/* muda o tamanho da fonte */
+    border-radius: 5px;/* arredonada a borda */
+    width: 200px;/* muda alargura */
+    margin: 20px;/* cria uma margem */
+}
+
+.jogopesquisa {
+    align-items: center;/* alinha os items verticalmente */
+    display: flex;/* deixa em flex para muadar o posisionamento dos itens  */
+    flex-direction: column;/* alinha a posisão dos itens em coluna */
+    color: white;/* muda a cor da fonte */
+    text-align: center;/* alinha o texto no centro */
+    padding: 20px;/* adiciona espaço dentro da div */
+    background-color: #6802a8ef;/* muda a cor de fundo */
+    font-size: 14px;/* muda o tamanho da fonte */
+    border-radius: 5px;/* arredonada a borda */
+    width: 200px;/* muda alargura */
+    margin: 20px;/* cria uma margem */
+}
+.divprincipal {
+    justify-content: center;/* alinha os itens horizontalmente */
+    align-items: center;/* alinha os itens verticalmente */
+    text-align: center;/* alinha o texto no centro */
+    display: flex;/* deixa a posisão flexivel para mudar a posisão do item */
+}
+
+.vazio {
+    color: white;/* muda a cor da fonte */
+    height: 500px;/* muda a altura */
+}
+
+.imgcarrinho {
+    height: 40px;/* muda a altura */
+    width: 40px;/* muda a largura */
+}
+
+/*  efeito zoom   */
+.imgzoom {
+    transition: 2s;/* faz uma transisaõ de 2 segundos */
+    cursor: pointer;/* muda o cursor para clikcar */
+}
+
+.imgoverflow {
+    overflow: hidden;/* oculta tudo o que passar da div */
+    border-radius: 1px;/* arredonda a borda */
+}
+
+.imgzoom:hover {
+    transform: scale(1.1);/* cria um zoom */
+}
+/* para tablet e mobile */
+@media only screen and (min-width:750px){
+    .divprincipal {
+        margin-right: 3%;/* cria uma margin para rigth */
+        text-align: center;/* centraliza os textos */
+        display: inline-block;/* deixa os itens um em cada linha */
+    }
+}
+/* para desktop */
+@media only screen and (min-width:1000px){
+    .divprincipal{
+        margin-right: 34px;/* cria uma margem pra rigth */
+    }
+}

@@ -1,0 +1,154 @@
+*,
+*::before,
+*::after { /* O '*' serve para dar o estilo de todos os elementos que tem no código */
+    margin: 0; /* serve para dar um espaço para fora do elemento */
+    padding: 0; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/ 
+    border: 0;  /* borda do elemento */
+    box-sizing: border-box; /* Faz com que o navegador não calcule a dimensão de um elemento sem a soma das bordar ou margins*/
+}
+
+html,
+body { /* Estilização da página e do corpo da página */
+    height: 100%; /* altura dos elemenetos em porcentagem*/
+}
+
+h1 {
+    color: white;
+    margin: 3px;
+}
+
+
+body,
+.wrapper { /*Estilização do corpo da página e da div 'wrapper' */
+    background-image: linear-gradient(45deg, black, #221133); /* A principio o background-image serve para colocar uma foto de fundo, porém nesse caso estamos colocando um gradient */  
+}
+
+.slide-wrapper { /* Estilização da div slide-wrapper*/
+    display: flex; /* O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização */
+    justify-content: center; /* justify-content alinha a div no centro */ 
+    flex-direction: column;  /* flex-direction permite alterar a direção na qual os elementos flexs com base no eixo principal*/
+    overflow: hidden; /* serve para caso tenha mais conteúdos do que o tamanho da div, assim ela irá quebrar evitando uma barra de rolagem*/
+    width: 100%; /* Comprimento da div em porcentagem*/
+}
+
+.slide-list { /* Estilização da div slide-list */
+    display: flex; /* O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização */
+}
+
+.slide-item { /* Estilização da div slide-item*/
+    cursor: grab; /* determina como será o cursor do seu mouse, nesse caso seria a maozinhs*/
+    flex-shrink: 0; /* define para que os elementos encolham, mas nesse caso impede de encolher devido ao valor ser 0 */
+    padding: 0 10px; /* espaçamento de dentro do elemento, primeiro valor seria na vertical e o segundo valor seria na horizontal*/
+    width: 90vw; /* tamanho horizontal em viewport */
+}
+
+.slide-content { /* Estilização da div slide-content */
+    border-radius: 10px; /* Arredonda a Borda do elemento */
+    border: 1px solid #fff; /* Borda da div, primeiro vem a espessura, depois o tipo da bordar nesse caso fica solida, e depois vem a cor da borda*/
+    box-shadow: #070707 0px 12px 12px; /* Cor da sombra da div */
+    position: relative; /* position como o proprio nome já diz seria para colocar como será a posição dessa div, nesse caso está relativa mas podemos deixar fixa para não mexer não importa o que faça */
+}
+
+.slide-image { /* Estilização das imagens do slide */
+    border-radius: 10px; /* Arredonda a Borda da imagem */
+    width: 100%; /* Largura da imagem dentro da div, ou seja ela ocupara 100% da div porém não ocupará 100% da tela*/ 
+    height: auto; /* Tamanho da imagem aútomatica para que a imagem não fique achatada*/
+
+}
+
+.slide-description {/* Estilização da descrição da imagem */
+    border-radius: 10px; /* Arredonda a Borda da div da descrição*/
+    background: linear-gradient(to top, #000, transparent); /* Tela de fundo em gradient, a primeira entra parenteses é daonde ela começará então será do topo para baixo e os outros são as cores então irá do preto para o tranparente*/
+    color: #fff; /* Cor dos textos que estão dentro dessa class*/
+    position: absolute; /* posição absoluta seria quase como a fixa mas nesse caso elá se move de acordo com a responsividade */ 
+    padding: 30px; /* Espaçamento dos Elemento que estão dentro dessa class */
+    bottom: 0; /* Bottom seria o chão então estamos dizendo para deixar a descrição em baixo no slide */
+    width: 100%; /* Largura que ocupará */
+}
+
+.slide-description h3 { /* Estilização do h3 da div slide-description*/
+    font-family: 'Koulen', sans-serif; /*Fonte da letra do nome do jogo */
+    font-size: 48px; /* Tamanho da fonte da letra */
+    position: relative; /* position como o proprio nome já diz seria para colocar como será a posição dessa div, nesse caso está relativa mas podemos deixar fixa para não mexer não importa o que faça */
+    top: 16px /*Top seria o espaço do topo entre o h3 */
+}
+
+.slide-description p { /* Estilização do paragrafo da div slide-description */
+    font-family: 'PT Sans', sans-serif; /*Fonte da letra*/
+    font-size: 24px; /*Tamanho da font */
+}
+
+.slide-nav-button {/* Estilização do botão */
+    background: transparent; /* Fundo transparente */
+    color: #fff; /* Cor do texto */
+    cursor: pointer; /* defini como será o curdsor do mouse, pointer é a seta padrão */
+    font-size: 36px; /* Tamanho da Letra */
+    position: absolute; /* Posição do botão absoluta não possível mudar mesmo com a diminuição da tela*/
+    z-index: 1; /* Z-index serve para definir a sobreposição do elemento */
+}
+
+.slide-nav-previous {/* Estilização do botão para um slide anterior */
+    left: 20px; /* Distância que ficará da esquerda do site */
+}
+
+.slide-nav-next {/* Estilização do botão para o próximo slide*/
+    right: 20px; /* Distância que ficará da direita do site*/
+}
+
+.slide-controls {/* Estilização das div dos botões das bolinhas*/
+    margin: 30px auto 0; /* Espaçamento da div, o primeiro número é para o topo, o segundo para os lados e o terceiro para a parte inferior*/
+}
+
+.slide-control-button { /* Estilização das bolinhas */
+    color: #fff; /* Cor das bolinhas quando estão normais */
+    cursor: pointer; /* defini como será o curdsor do mouse, pointer é a seta padrão */
+    background: transparent; /* Fundo trnasparente */
+    font-size: 18px; /* Tamanho da letra */
+    margin: 0 5px; /* espaçamento da div, o primeiro número é para vertical e o horizontal é o segundo valor */
+}
+
+.slide-control-button.active {/* Estilização das bolinhas quando estam ativas */
+    color: #cd8cf5; /* Cor das bolinhas */
+}
+
+@media screen and (max-width: 768px) {/*Estilização para quando a Tela ficar menor que 768px */
+    .slide-description { /* Estilização da descrição da imagem */
+        padding: 10px; /* espaçamento de dentro da div */
+    }
+
+    .slide-description h3 {/* Estilização do h3 da div slide-description*/
+        font-size: 24px; /* Tamanho da fonte do texto */
+        top: 0; /* Distancia do topo */
+    }
+
+    .slide-description p { /* Estilização do paragrafo da div slide-description */
+        display: none; /* Faz tudo que está no paragrafo ficar invisivel sem ocupar espaço */
+    }
+
+    .slide-nav-button {/* Estilização do botão */
+        margin-top: -20px; /* Espaçamento do topo negativa para que em vez de se distanciar se aproximar */
+        font-size: 28px; /* Tamanho da fonte do texto */
+    }
+
+    .slide-nav-previous {/* Estilização do botão para um slide anterior */
+        left: 10px; /* Distância que ficará da esquerda do site */
+    }
+
+    .slide-nav-next {/* Estilização do botão para o próximo slide*/
+        right: 10px; /* Distância que ficará da direita do site*/
+    }
+
+    .slide-controls {/* Estilização das div dos botões das bolinhas*/
+        margin: 15px auto 0; /* Espaçamento da div, o primeiro número é para o topo, o segundo para os lados e o terceiro para a parte inferior*/
+    }
+
+    .slide-control-button {/* Estilização das bolinhas */
+        font-size: 14px; /*Tamanho da fonte do texto */ 
+    }
+}
+
+@media only screen and (min-width:1000px) { /* Estilização para quando o tamanho da tela está no minimo 1000px*/
+    .slide-item { /* Estilização da div slide-item*/
+        width: 75vw; /*Largura em viewport */
+    }
+}

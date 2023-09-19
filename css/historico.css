@@ -1,0 +1,136 @@
+*{
+    margin: 0px;/* zera  a margem */
+    padding: 0px;/* zera o espaço */
+}
+
+body{
+    background-image: linear-gradient(45deg, black, #221133);/* muda a cor de fundo */
+}
+.btn{
+    background-color: #221133;/* muda a coe de fundo */
+    border-radius: 10px;/* arredonda as bordas */
+    padding: 7px;/* cria um espaço para dentro */
+    
+}
+.a-btn{
+color: white;/* muda a cor da letra */
+}
+.img-carrinho{
+    height: auto;/* a altura fica proporcional a largura */
+    width: 150px;/* muda a lagura */
+}
+
+.historico-linha{
+    width: 91%;/* muda a largura */
+    border-radius: 4px;/* arredonda a borda */
+    margin: 10px;/* adiciona uma margem */
+   background-color: blueviolet;/* muda a cor de fundo */
+   display: flex;/* deixa flex para mudar a posisão do item */
+    margin-top: 10px;/* cria uma margem para cima */
+}
+
+.historico-vazio{
+    color: white;/* muda a cor da fonte */
+    width: 100%;/* muda a lagura */
+    text-align: center;/* alinha os itens horizontalmente */
+}
+
+.historico .titulo-historico{
+    width: 100%;/* muda a lagura */
+    color: white;/* muda a cor da fonte */
+    justify-content: center;/* alinha os itens verticalmente  */
+    margin-top: 10px;/* cria uma margem para cima  */
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 3px #4709d7fd;/* cria uma sombra para o texto  */
+    display: flex;/* deixa flex para mudar aposi  */
+}
+
+.produtos{
+    width: 100%;/* muda a largura  */
+}
+
+.imagem-historico{
+    margin: 10px;/* adiciona uma margem  */
+}
+
+.conteudo-historico{
+    color: white;/* muda a cor da fonte  */
+    margin: 13px;/* adiciona uma margem  */
+    text-align: center;/* alinha as letras no meio  */
+    display: inline-block;/* deixa um em cada linha  */
+}
+
+.historico-endereco{
+    margin-top: 20px;/* cria uma margem   */
+    display: grid;
+    justify-items: center;
+}
+
+/*  css sistema de avaliação */
+
+.numero-carrinho{
+    color: white;/* muda a cor da fonte */
+    position: absolute;/* deixa a posisão estatica */
+}
+
+.estrelas input[type=radio]{
+	display: none;/* some como o input do type radio */
+}.estrelas label i.fa:before{
+	content: '\f005';
+	color: #FC0;/* muda a cor para amarelo */
+}.estrelas  input[type=radio]:checked  ~ label i.fa:before{
+	color: #CCC;/* se não estiver seleciona fica cinza */
+}
+@media only screen and (min-width:750px){/* para tabelt */
+
+    .historico-linha{
+        width: 97%;/* muda a largura  */
+    }
+    
+ .conteudo-historico{
+    width: 100%;/* muda a largura */
+    display: flex;/* deixa flexivel para mudar a posisaõ */
+    align-items: center;/* centraliza verticalmente */
+ }
+
+ .nome-historico{
+    width: 20%;/* muda a largura */
+ }
+
+ .valor-historico{
+    width: 20%;/* muda a largura */
+ }
+
+ .qtd-historico{
+    width: 10%;/* muda a largura */
+ }
+
+ .total-historico{
+    width: 30%;/* muda a largura */
+ }
+
+ .data-historico{
+    width: 20%;/* muda a largura */
+ }
+
+.historico-endereco{
+    position: absolute;/*  */
+    width: 85%;/* muda a lagura  */
+    display: flex;/* diaplay felx para mudar as posisões  */
+    margin-top: 150px;/* cria uma magem para cima */
+}
+
+.endereco{
+    align-items: center;/* alinha  verticamente */
+    justify-content: center;  /* alinha horizontalmente */  
+    display: flex;/* diaplay felx para mudar as posisões  */
+    width: 60%;/* muda a largura  */
+}
+
+.avaliar{
+    margin-right: 10px;/* cria uma margem no rigth */
+    width: 20%;/* muda a lergura  */
+}
+
+
+
+}

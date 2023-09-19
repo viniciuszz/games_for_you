@@ -1,0 +1,132 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@100;300;400;500;700;900&family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+/* Importa a font Poppins */
+* { /* O '*' serve para dar o estilo de todos os elementos que tem no código */
+  margin: 0; /* serve para dar um espaço para fora do elemento */
+  padding: 0; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/
+  box-sizing: border-box;  /* Faz com que o navegador não calcule a dimensão de um elemento sem a soma das bordar ou margins*/
+  font-family: 'poppins', sans-serif; /* Fonte padrão da letra do site */
+}
+
+.divadm{ /* Estilização do botão que leva para o login adm*/
+  background-color: rgb(0, 0, 0); /* Cor de fundo em RGB */
+  margin-top: 40px; /* Espaçamento da parte de cima da div com outro elemento de fora */
+  border-radius: 20px; /* Arredonda a Borda do elemento */
+  text-align: center; /* Alinhamento do texto no Centro */
+}
+.hrefadm{ /* Estilização do Href do adm */
+  color: white; /* Cor do texto */
+}
+
+
+body { /* Estilzação do corpo da página */
+  background-color: black; /* Cor do fundo */
+  width: 100vw; /* Largura */
+  height: 100vh; /* ALtura */
+  display: flex; /*O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização */
+  justify-content: center; /* justify-content alinha a div no centro */
+}
+
+.container { /* Estilização da div geral */
+  margin: 10px; /* serve para dar um espaço para fora do element */
+  background-color: #4709d7fd; /* Cor do fundo */  
+  padding: 5px; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/ 
+  width: 350px; /* Largura */
+  height: 600px; /* Altura */
+  display: flex; /* O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização */
+  flex-direction: column; /* OS itens fléxiveis ficam na vertical */
+  align-items: center; /* Alinhar horizontalmente os itens no centro */
+  position: relative; /* posição da div como relativa */
+  overflow: hidden; /* Não permite estourar a div */
+  border-radius: 10px; /* Arredondamento da div */
+  box-shadow: 0px 0px 40px #6802a8ef, 0px 0px 20px  #4709d7fd; /* Sombra da div */
+ 
+}
+
+.endereco{ /* Estilização da div endereco para cadastro do endereço*/
+  margin: 20px; /* serve para dar um espaço para fora do element */
+  background-color: #4709d7fd; /* Cor do fundo */
+  padding: 5px; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/
+  width: 350px; /* Largura */
+  height: 640px; /* Altura */ 
+  display: flex; /* O flex deixa ele e todas as divs filhas, possiveis de se manipular para a estilização */
+  flex-direction: column; /* OS itens fléxiveis ficam na vertical */
+  align-items: center; /* Alinhar horizontalmente os itens no centro */
+  position: relative; /* posição da div como relativa */
+  border-radius: 10px; /* Arredondamento da div */ 
+  box-shadow: 0px 0px 40px #6802a8ef, 0px 0px 20px #4709d7fd; /* Sombra da div */
+}
+
+h1{ /* Estilização do h1 */
+  font-size: 18px; /* Tamanho da fonte */
+}
+form { /* Estilização dos formularios */
+  position: absolute; /* posição absoluta seria quase como a fixa mas nesse caso elá se move de acordo com a responsividade */
+  margin-top: 60px; /* Espaçamento da parte de cima da div com outro elemento de fora */
+  transition: .5s; /* Transição do cadastro para o login em segundos */
+  width: 300px; /* Largura */
+  height: 300px; /* Altura*/
+}
+/*botão de cadastrar e logar*/
+.buttonsForm {
+  margin-top: 40px; /* Espaçamento da parte de cima da div com outro elemento de fora */
+  position: relative; /* posição da div como relativa */
+  border-radius: 30px; /* Arredondamento das divs */
+  background-color: rgb(255, 255, 255); /* Cor de fundo */
+  box-shadow: 0 0 7px 0 #a144dbef; /* Sombra da div */
+}
+
+.buttonsForm button { /* Estilização do botão */
+  
+    color: rgb(0, 0, 0); /* Cor do texto */
+  cursor: pointer; /* defini como será o curdsor do mouse, pointer é a seta padrão */
+  background: transparent; /* deixa o fundo transparente */
+  border: none;/* bordar nula ou seja igual a nada */ 
+  position: relative; /* position como o proprio nome já diz seria para colocar como será a posição dessa div, nesse caso está relativa mas podemos deixar fixa para não mexer não importa o que faça */
+  padding: 10px 30px;
+}
+
+.btnColor { /* Estilização da div */
+  position: absolute; 
+  width: 113px; /*Largura */
+  height: 100%; /*Altura */
+  background: linear-gradient(to right, #a144dbef,  #a144dbef); /* A principio o background-image serve para colocar uma foto de fundo, porém nesse caso estamos colocando um gradient */  
+  border-radius: 30px; /* Arredondamento */
+  transition: .3s; /* Transição de 3 segundos */
+}
+
+input[type="text"], input[type="password"],input[type="email"] {  /* Estilização do input text password e email */
+  border: none; /* Borda nula sem nada */
+  margin-top: 35px; /* Espaçamento da parte de cima da div com outro elemento de fora */
+  border-radius: 60px; /* Arredondamento do elemento */
+  padding: 8px 0 8px 35px; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/
+  outline: none; /* Retira a linha após a borda */
+  width: 100%; /* Largura */
+}
+
+button[type="submit"] { /* Estilização do input submit */
+  background: #000000; /* fundo */
+  color:white; /* Cor do texto */
+  border-radius: 30px; /* Arredondamento do elemento */
+  width: 100%; /* Largura */
+  border: none; /* Borda nula para não aparecer*/
+  outline: none; /* Retirar a linha após a borda*/
+  padding: 8px 0 8px 15px; /* Ao contrario do margin o padding da um espaço no elemento que estão dentro*/
+  font-size: 15px; /* Tamanho da fonte */
+  margin-top: 40px; /* Espaçamento da parte de cima da div com outro elemento de fora */
+  cursor: pointer; /* defini como será o curdsor do mouse, pointer é a seta padrão */
+}
+
+#signin { /* Estilização da class do login */
+    color: rgb(0, 0, 0); /* Cor do texto */
+  left: 25px; /* Distância que ficará da esquerda do site */
+}
+
+#signup {
+  left: 450px; /* Distância que ficará da esquerda do site */
+  color: rgb(0, 0, 0); /* Cor do texto */
+}
+
+
+
+

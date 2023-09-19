@@ -1,0 +1,281 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.footer nav {
+    padding: 2rem;
+}
+.footer div {
+    padding: 25px;
+}
+.footer .list {
+    padding: 25px;
+}
+
+.footer {
+    padding: 40px 0;
+    background-color: black;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    display: block;
+    bottom: 0px;
+
+}
+
+.footer ul {
+    margin-top: 0;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.footer ul li a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Patron', sans-serif;
+    font-size: 12px;
+}
+
+.footer ul .listra {
+    border-right: 2px solid white;
+
+}
+
+.footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+}
+
+.footer ul li a:hover {
+    text-shadow: 0px 0px 10px #6802a8ef, 0px 0px 5px #4709d7fd;
+    transition: 1s;
+    border-bottom: 2px solid #6802a8ef;
+    box-shadow: 0px 0px 40px #6802a8ef, 0px 0px 20px #4709d7fd;
+}
+
+.footer ul li .footer-xbox:hover {
+    text-shadow: 0px 0px 10px #05d805ef, 0px 0px 5px #09d724fd;
+    transition: 1s;
+    border-bottom: 2px solid #05d805ef;
+    box-shadow: 0px 0px 40px #05d805ef, 0px 0px 20px #09d724fd;
+}
+
+.footer ul li .footer-playstation:hover {
+    text-shadow: 0px 0px 10px #0508d8ef, 0px 0px 5px #0c09d7fd;
+    transition: 1s;
+    border-bottom: 2px solid #0508d8ef;
+    box-shadow: 0px 0px 40px #0508d8ef, 0px 0px 20px #0c09d7fd;
+}
+
+.footer ul li .footer-nintendo:hover {
+    text-shadow: 0px 0px 10px #d80505ef, 0px 0px 5px #d70909fd;
+    transition: 1s;
+    border-bottom: 2px solid #d80505ef;
+    box-shadow: 0px 0px 40px #d80505ef, 0px 0px 20px #d70909fd;
+}
+
+.div-img-scs {
+    display: inline;
+    width: 100px;
+    height: auto;
+}
+
+.img-scs {
+    width: 200px;
+    height: auto;
+}
+
+.contatos {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contatos p {
+    color: white;
+}
+
+
+
+.col-sm-1 {
+    width: 8.33%;
+}
+
+.col-sm-2 {
+    width: 16.66%;
+}
+
+.col-sm-3 {
+    width: 25%;
+}
+
+.col-sm-4 {
+    width: 33.33%;
+}
+
+.col-sm-5 {
+    width: 41.66%;
+}
+
+.col-sm-6 {
+    width: 50%;
+}
+
+.col-sm-7 {
+    width: 58.33%;
+}
+
+.col-sm-8 {
+    width: 66.66%;
+}
+
+.col-sm-9 {
+    width: 75%;
+}
+
+.col-sm-10 {
+    width: 83.33%;
+}
+
+.col-sm-11 {
+    width: 91.66%;
+}
+
+.col-sm-12 {
+    width: 100%;
+}
+
+@media only screen and (min-width:750px) {
+    .col-md-1 {
+        width: 8.33%;
+    }
+
+    .col-md-2 {
+        width: 16.66%;
+    }
+
+    .col-md-3 {
+        width: 25%;
+    }
+
+    .col-md-4 {
+        width: 33.33%;
+    }
+
+    .col-md-5 {
+        width: 41.66%;
+    }
+
+    .col-md-6 {
+        width: 50%;
+    }
+
+    .col-md-7 {
+        width: 58.33%;
+    }
+
+    .col-md-8 {
+        width: 66.66%;
+    }
+
+    .col-md-9 {
+        width: 75%;
+    }
+
+    .col-md-10 {
+        width: 83.33%;
+    }
+
+    .col-md-11 {
+        width: 91.66%;
+    }
+
+    .col-md-12 {
+        width: 100%;
+    }
+
+    .footer {
+        display: flex;
+    }
+
+    .div-img-scs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .img-scs {
+        width: 200px;
+        height: auto;
+    }
+
+}
+
+@media only screen and (min-width:1000px) {
+    .col-lg-1 {
+        width: 8.33%;
+    }
+
+    .col-lg-2 {
+        width: 16.66%;
+    }
+
+    .col-lg-3 {
+        width: 25%;
+    }
+
+    .col-lg-4 {
+        width: 33.33%;
+    }
+
+    .col-lg-5 {
+        width: 41.66%;
+    }
+
+    .col-lg-6 {
+        width: 50%;
+    }
+
+    .col-lg-7 {
+        width: 58.33%;
+    }
+
+    .col-lg-8 {
+        width: 66.66%;
+    }
+
+    .col-lg-9 {
+        width: 75%;
+    }
+
+    .col-lg-10 {
+        width: 83.33%;
+    }
+
+    .col-lg-11 {
+        width: 91.66%;
+    }
+
+    .col-lg-12 {
+        width: 100%;
+    }
+
+    .div-img-scs {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+
+    .footer {
+        display: flex;
+    }
+}
+
+.copy {
+    color: white;
+    font-size: 17px;
+}
